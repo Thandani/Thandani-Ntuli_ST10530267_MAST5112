@@ -1,0 +1,23 @@
+{
+  "expo": {
+    "name": "Chef's Menu Manager",
+    "slug": "chefs-menu-manager",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/logo-removebg-preview.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#b29e84"
+  },
+  "ios": {
+    "supportsTablet": true
+  },
+  "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/logo-removebg-preview.png",
+        "backgroundColor": "#b29e84"
+      }
+    },
+    "web": {
+      "favicon": "./assets/images/logo-removebg-preview.png"
+    }
+  }
