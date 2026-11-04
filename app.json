@@ -5,18 +5,26 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/logo-removebg-preview.png",
-    "userInterfaceStyle": "light"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/images/logo-removebg-preview.png",
-        "backgroundColor": "#F4F5F7"
+    "userInterfaceStyle": "light",
+    "extra": {
+      "eas": {
+        "projectId": "4f6ce4de-8843-45c0-a644-5f37cc87ce8a"
       }
     },
-    "web": {
-      "favicon": "./assets/images/logo-removebg-preview.png"
+    "android": {
+      "package": "com.thando3.chefsmenumanager"
     }
+  },
+  "ios": {
+    "supportsTablet": true
+  },
+  "android": {
+    "adaptiveIcon": {
+      "foregroundImage": "./assets/images/logo-removebg-preview.png",
+      "backgroundColor": "#F4F5F7"
+    }
+  },
+  "web": {
+    "favicon": "./assets/images/logo-removebg-preview.png"
   }
+}
