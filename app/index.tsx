@@ -177,7 +177,7 @@ export default function App(): React.JSX.Element {
             style={styles.headerImage}
             resizeMode="contain"
           />
-          <Text style={styles.subtitle}>Total Menu Items: {totalItems}</Text>
+
         </View>
 
         {/* Custom Navigation Tab Bar */}
@@ -196,7 +196,7 @@ export default function App(): React.JSX.Element {
             onPress={() => setActiveScreen('manage')}
           >
             <Text style={[styles.tabText, activeScreen === 'manage' && styles.activeTabText,]}>
-              {editingId ? 'Edit Dish' : 'Add / Manage'}
+              Add Dish
             </Text>
           </TouchableOpacity>
 
@@ -205,7 +205,7 @@ export default function App(): React.JSX.Element {
             onPress={() => setActiveScreen('search')}
           >
             <Text style={[styles.tabText, activeScreen === 'search' && styles.activeTabText,]}>
-              Search & Filter
+              Search
             </Text>
           </TouchableOpacity>
         </View>
@@ -247,7 +247,7 @@ export default function App(): React.JSX.Element {
 
               {menuItems.length === 0 ? (
                 <View style={styles.emptyContainer}>
-                  <Text style={styles.emptyText}>No dishes available yet. Add items in the 'Add / Manage' tab.</Text>
+                  <Text style={styles.emptyText}>No dishes available yet. Add items in the 'Add Dish' tab.</Text>
                 </View>
               ) : (
                 <TouchableOpacity
@@ -341,8 +341,7 @@ export default function App(): React.JSX.Element {
           {/* ================= SCREEN 3: SEARCH & FILTER ================= */}
           {activeScreen === 'search' && (
             <View style={styles.screenContainer}>
-              <Text style={styles.screenTitle}>Search & Filter Menu Items</Text>
-
+              
               {/* Search Bar */}
               <View style={styles.formCard}>
                 <Text style={styles.label}>Search by Dish Name</Text>
