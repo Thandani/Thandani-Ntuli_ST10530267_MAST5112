@@ -183,28 +183,28 @@ export default function App(): React.JSX.Element {
         {/* Custom Navigation Tab Bar */}
         <View style={styles.tabBar}>
           <TouchableOpacity
-            style={[styles.tabButton, activeScreen === 'stats' && styles.activeTabButton]}
+            style={[styles.tabButton, activeScreen === 'stats' && styles.activeTabButton,]}
             onPress={() => setActiveScreen('stats')}
           >
-            <Text style={[styles.tabText, activeScreen === 'stats' && styles.activeTabText]}>
+            <Text style={[styles.tabText, activeScreen === 'stats' && styles.activeTabText,]}>
               Dashboard
             </Text>
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={[styles.tabButton, activeScreen === 'manage' && styles.activeTabButton]}
+            style={[styles.tabButton, activeScreen === 'manage' && styles.activeTabButton,]}
             onPress={() => setActiveScreen('manage')}
           >
-            <Text style={[styles.tabText, activeScreen === 'manage' && styles.activeTabText]}>
+            <Text style={[styles.tabText, activeScreen === 'manage' && styles.activeTabText,]}>
               {editingId ? 'Edit Dish' : 'Add / Manage'}
             </Text>
           </TouchableOpacity>
 
           <TouchableOpacity
-            style={[styles.tabButton, activeScreen === 'search' && styles.activeTabButton]}
+            style={[styles.tabButton, activeScreen === 'search' && styles.activeTabButton,]}
             onPress={() => setActiveScreen('search')}
           >
-            <Text style={[styles.tabText, activeScreen === 'search' && styles.activeTabText]}>
+            <Text style={[styles.tabText, activeScreen === 'search' && styles.activeTabText,]}>
               Search & Filter
             </Text>
           </TouchableOpacity>
